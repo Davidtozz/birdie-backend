@@ -1,0 +1,294 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200&display=swap');
+
+
+ul {
+
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    padding-right: 1rem;
+}
+
+ul li a {
+
+    color: white;;
+    text-decoration: none;
+}
+
+
+
+nav {
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #b11f06;
+    position: fixed;
+    font-size: 1.4rem;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    display: flex;
+    width: 100%;
+
+}
+
+
+nav a{
+    padding: 0 1.5rem;
+}
+
+
+#welcome-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.davidtozz{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.davidtozz h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.davidtozz p{
+    font-size: 2rem;
+    color: #BE3144;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2rem;
+    width: 25rem;
+    background-color: greenyellow;
+    height: 21rem;
+}
+
+
+
+
+.project-heading{
+    background-color: #363538;
+    padding: 1.2rem;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+img{
+    height: 100%;
+    text-align: center;    
+    resize: both;
+}
+
+.img-container{
+    overflow: hidden;
+    height: 100%;   
+    
+}
+
+
+
+.grid-row1{
+    grid-area: "1";
+}
+
+.grid-row2{
+    grid-area: "2";
+}
+
+
+#projects{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    justify-items: center;
+    align-items: center;
+    height: 70rem;
+    background-color: #075688;
+    padding: 10rem;
+    
+    gap: 2rem;
+    grid-template-areas: 
+    "1 1 1" 
+    "2 2 2";
+  
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+}
+
+
+
+
+footer{
+    height: 30rem;
+    display: flex; 
+    justify-content: center;
+    background: #505053;
+}
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <ul class="profiles">
+                <li><a target="_blank" id="profile-link"  href="https://github.com/Davidtozz"><i class="fab fa-lg fa-github"></i> </a></li>
+                <li><a target="_blank" href="https://www.freecodecamp.org/davidtozz"><i class="fa-brands fa-lg fa-free-code-camp"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa-brands fa-lg fa-linkedin"></i></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main id="welcome-section">
+
+        <img src="a-thunderstorm-with-volcanic-lightning-seen-as-mount-etna-erupts5184-x-3456-px-wallpaper.jpg" alt=""
+            srcset="">
+
+        <section  class="davidtozz">
+            <h1>Hey I am Davidtozz</h1>
+            <p>a web developer</p>
+        </section>
+
+    </main>
+
+
+    <section id="projects">
+
+
+        <div class="project-tile grid-row1">
+
+
+            <div class="img-container">
+
+                <a href="https://codepen.io/davidtozz/pen/jOapNVp"><img src="images/tribute.jpg" alt="tributepage"></a>
+
+            </div>
+
+            <div class="project-heading">
+
+                <h3>Tribute Page</h3>
+            </div>
+
+        </div>
+
+
+        <div class="project-tile grid-row1">
+
+            <div class="img-container">
+                <a href="#"><img src="images/random quote machine.png" alt=""></a>
+
+            </div>
+
+            <div class="project-heading">
+                <h3>Random Quote Machine</h3>
+            </div>
+
+        </div>
+
+
+
+        <div id="" class="project-tile grid-row1">
+
+            <div class="img-container">
+                <a><img src="images/JavaScript Calculator.png" alt="" srcset=""></a>
+            </div>
+
+            <div class="project-heading">
+                <h3>JavaScript Calculator</h3>
+            </div>
+        </div>
+
+
+
+        <div class="project-tile grid-row2">
+
+
+            <a href="">
+                <div class="img-container"> <img src="images/Map Data Across the Globe.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="project-heading">
+            <h3>Map Data Across the Globe</h3>
+        </div>
+        </div>
+
+
+        <div class="project-tile grid-row2">
+
+
+
+            <div class="img-container">
+                <a target="_blank" href=""> <img src="images/Wikipedia Viewer.png" alt=""></a>
+
+            </div>
+
+            <div class="project-heading">
+                <h3>Wikipedia Viewer</h3>
+            </div>
+        </div>
+
+
+
+
+        <div class="project-tile grid-row2">
+
+            <div class="img-container"><img src="images/Tic Tac Toe Game.png" alt="">
+            </div>
+
+            <div class="project-heading">
+                <h3>Tic Tac Toe Game</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    
+</body>
+
+</html>
